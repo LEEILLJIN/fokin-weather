@@ -18,7 +18,7 @@ const weatherOptions = {
       gradient: []
     },
     Rain: {
-      iconName: "weather-raniy",
+      iconName: "weather-rainy",
       gradient: ["black", "gray"]
     },
     Snow: {
@@ -57,7 +57,7 @@ export default function Weather({temp, condition}){
             <View style = {styles.halfContainer}>
                 <MaterialCommunityIcons 
                     size={96} 
-                    name = {weatherOptions["Haze"].iconName}
+                    name = {weatherOptions[condition].iconName}
                     color = "white"
                 />
                 <Text style = {styles.temp}>{temp}°</Text>
